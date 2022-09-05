@@ -14,12 +14,12 @@
 <body>
     <div id="main">
         <form onsubmit="return false">
-            <label for="paid">Places paid</label>
-            <input id="paid" placeholder="Places" type="number" value="8" onchange="changePlacesPaid(this.value)"/>
+            <label for="paid">How many total buy-ins [including rebuys]?</label>
+            <input id="buyins" placeholder="Buys" type="number" value="8" onchange="changePlacesPaid(this.value)"/>
             <div id="paid-error" class="error"></div>
-            <br/>Total prize money
+            <br/>Cost to buy-in?
             <br/>
-            <input id="prize" placeholder="Prize" type="number" value="" />
+            <input id="cost" placeholder="Buy-In" type="number" value="" />
             <br/> Minimal payout
             <br/>
             <input id="minimalPayout" type="number" value="10" />

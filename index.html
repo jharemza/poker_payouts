@@ -16,11 +16,10 @@
         <form onsubmit="return false">
             <label for="paid">How many total buy-ins [including rebuys]?</label>
             <input id="buyins" placeholder="Buys" type="number" value="8" onchange="changePlacesPaid(this.value)"/>
-            <div id="paid-error" class="error"></div>
-            <br/>Cost to buy-in?
-            <br/>
-            <input id="cost" placeholder="Buy-In" type="number" value="" />
-            <br/> Minimal payout
+            <div id="paid-error" class="error"></div><br/>
+            <label for="cost"> Cost to buy-in? </label>
+            <input id="cost" placeholder="Buy-In" type="number" value="" /><br/>
+            <label for="minimalPayout">Minimal payout</label>
             <br/>
             <input id="minimalPayout" type="number" value="10" />
             <br/> Round on

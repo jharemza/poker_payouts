@@ -16,7 +16,7 @@ const payoutRatio = {
 
 function calculate() {
     const prize = parseInt(document.getElementById("prize").value);
-    const placesPaid = parseInt(document.getElementById("paid").value);
+    const buyIns = parseInt(document.getElementById("buyins").value);
     const percentages = payoutRatio[placesPaid];
     const payouts = [];
 
@@ -73,22 +73,22 @@ function parseQuery(url) {
     }, {});
 }
 
-function changePlacesPaid(paid) {
-    const error = validatePlacesPaid(paid);
+function changeBuyIns(buyins) {
+    const error = validateBuyIns(buyins);
     if (error) {
-        document.getElementById('paid-error').innerHTML = error;
+        document.getElementById('buyins-error').innerHTML = error;
     } else {
-        document.getElementById('paid-error').innerHTML = "";
+        document.getElementById('buyins-error').innerHTML = "";
     }
 }
 
-function validatePlacesPaid(paid) {
-    const paidInt = parseInt(paid);
-    if (isNaN(paidInt)) {
+function validateBuyIns(buyins) {
+    const buyInsInt = parseInt(buyins);
+    if (isNaN(buyInsInt)) {
         return "Enter a number";
     }
-    if (paidInt < 1 || paidInt > 8) {
-        return "Must be between 1 and 8";
+    if (buyInsInt < 2 || buyInsInt > 25) {
+        return "Must be between 2 and 25";
     }
     return undefined;
 }

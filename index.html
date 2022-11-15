@@ -13,9 +13,9 @@
 <body>
     <div id="main">
         <form onsubmit="return false">
-            <label for="paid">How many total buy-ins [including rebuys]?</label>
-            <input id="buyins" placeholder="Buys" type="number" value="10" onchange="changePlacesPaid(this.value)"/>
-            <div id="paid-error" class="error"></div>
+            <label for="buyins">How many total buy-ins [including rebuys]?</label>
+            <input id="buyins" placeholder="Buy Ins" type="number" value="10" onchange="changeBuyIns(this.value)"/>
+            <div id="buyins-error" class="error"></div>
             <br/>
             <label for="cost"> Cost to buy-in? </label>
             <input id="cost" placeholder="Buy-In" type="number" value="20" />
